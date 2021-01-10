@@ -1,8 +1,8 @@
 # Prework-CodeChallenges
 # Table of Content
 
-[Array Max Result](#Array-Max-Result)
-[Leap Year Calculator](#Leap-Year-Calculator)
+* [Array Max Result](#Array-Max-Result)
+* [Leap Year Calculator](#Leap-Year-Calculator)
 
 # Array Max Result
 ### Date 1/9/2021
@@ -26,8 +26,7 @@ Time:  O(n)
 * If they match increase counter by one
 * Print number for score * the amount of times it was found in int array
 
-### ScreenShot
-[Screenshot](Prework-CodeChallenges\img\ArrayMaxResultScreenshot.png)
+[Screenshot](..\img\ArrayMaxResultScreenshot.png)
 ---------------------------------------------------------------------------
 
 # Leap Year Calculator
@@ -47,6 +46,5 @@ Time:  O(1)
 * Test if year is evenly divisible by 4 and that it is not evenly divisible by 100. return true if it passes both.
 * If year doesn't pass any of the above test return false.
 
-### ScreenShot
-[Screenshot](Prework-CodeChallenges\img\LeapYearCalcScreenshot.png)
+[Screenshot](img\LeapYearCalcScreenshot.png)
 --------------------------------------------------------------------
