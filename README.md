@@ -70,5 +70,5 @@ Time:  O(n)
 * If they are return "yes"
 * If not return "no"
 
-[Screenshot](/img/PerfectSequence.png)
+[Screenshot](/img/PerfectSequenceScreenshot.png)
 --------------------------------------------------------------------
