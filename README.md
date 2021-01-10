@@ -14,7 +14,7 @@ Method needs to take in an int [] and a int if the users selected input.
 The score is whatever number the iser selected * the number of times it is in the array.
 
 ### Approach & Efficiency
-Space: O(n)
+Space: O(n)  
 Time:  O(n)
 * Create a method to ask user for 5 integers to populate the int array.
 * Check that input from user is a number between 1-10 before saving it to the array.
@@ -26,7 +26,7 @@ Time:  O(n)
 * If they match increase counter by one
 * Print number for score * the amount of times it was found in int array
 
-[Screenshot](img\ArrayMaxResultScreenshot.png)
+[Screenshot](/img/ArrayMaxResultScreenshot.png)
 ---------------------------------------------------------------------------
 
 # Leap Year Calculator
