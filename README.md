@@ -46,5 +46,5 @@ Time:  O(1)
 * Test if year is evenly divisible by 4 and that it is not evenly divisible by 100. return true if it passes both.
 * If year doesn't pass any of the above test return false.
 
-[Screenshot](img\LeapYearCalcScreenshot.png)
+[Screenshot](Prework-CodeChallenges/img/LeapYearCalcScreenshot.png)
 --------------------------------------------------------------------
