@@ -7,9 +7,16 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            //ArrayMaxResult
-            getNumsArrayMax();
-            
+            // ArrayMaxResult
+           // getNumsArrayMax();
+            // Leap Year Calculator 
+            IsLeapYear(1997);
+            IsLeapYear(1996);
+            IsLeapYear(1900);
+            IsLeapYear(2000);
+
+
+
         }
 
         /*Create a Console application that requests 5 numbers between 1-10 from the user. 
@@ -72,7 +79,7 @@ namespace ConsoleApp1
             ArrayMaxResult(nums, num);
         }
 
-//------------------------------------------------------
+        //------------------------------------------------------
         static void ArrayMaxResult(int [] nums, int num)
         {
             int counter = 0;
@@ -82,7 +89,31 @@ namespace ConsoleApp1
             }
             Console.WriteLine(num * counter);
         }
-    }
-}
 
-//============
+        //============ Is Leap Year ================
+        /*
+          on every year that is evenly divisible by 4
+          except every year that is evenly divisible by 100
+          unless the year is also evenly divisible by 400
+         */
+
+        static bool IsLeapYear(int year)
+        {
+            if (year % 400 == 0)
+            {
+                Console.WriteLine(year + " is a leap year.");
+                return true;
+            }
+            if(year % 4 == 0 && year % 100 != 0)
+            {
+                Console.WriteLine(year + " is a leap year.");
+                return true;
+            }
+            Console.WriteLine(year + " is not a leap year.");
+            return false;
+        }
+
+
+    }// end of main
+}// end of class
+
