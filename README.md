@@ -4,6 +4,7 @@
 * [Array Max Result](#Array-Max-Result)
 * [Leap Year Calculator](#Leap-Year-Calculator)
 * [Perfect Sequence](#Perfect-Sequence)
+* [Sum of Rows](#Sum-of-Rows)
 
 # Array Max Result
 ### Date 1/9/2021
@@ -58,7 +59,7 @@ Given an array, return “Yes” if the sequence is considered a perfect sequenc
 A perfect sequence is a sequence such that all of its elements are non-negative integers and the product of all of them is equal to their sum.
 
 ### Approach & Efficiency
-Space: O(1)  
+Space: O(n)  
 Time:  O(n)
 * Create a variable to hold the sum of the numbers
 * Create a variable to hold the product of the numbers
@@ -71,4 +72,21 @@ Time:  O(n)
 * If not return "no"
 
 [Screenshot](/img/PerfectSequenceScreenshot.png)
+--------------------------------------------------------------------
+
+# Sum of Rows
+### Date 1/9/2021
+
+### Instructions
+Given a matrix of integers. Return the sum of each row in a single dimensional array.
+
+### Approach & Efficiency
+Space: O(n)  
+Time:  O(n)  
+
+* Write a nested for loop to step through each index in each array
+* In the inner loop add each index value to a sum vaiable
+* After exiting the inner loop and before starting another outer loop place variable in output array
+
+[Screenshot](/img/SumOfRowsScreenshot.png)
 --------------------------------------------------------------------

@@ -8,13 +8,19 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             // ArrayMaxResult
-           // getNumsArrayMax();
-            // Leap Year Calculator 
-           // IsLeapYear(1997);
-           // IsLeapYear(1996);
-            //IsLeapYear(1900);
-           // IsLeapYear(2000);
+            getNumsArrayMax();
+            Console.WriteLine("");
+            
+            //Leap Year Calculator
+            Console.WriteLine("Leap Year calculator:");
+            IsLeapYear(1997);
+            IsLeapYear(1996);
+            IsLeapYear(1900);
+            IsLeapYear(2000);
+            Console.WriteLine("");
+            
             // Perfect Sequence
+            Console.WriteLine("Perfect Sequence:");
             int[] test = new int[] { 2, 2 };
             Console.WriteLine(PerfectSequence(test));
             test = new int[] { 0, 0, 0, 0 };
@@ -25,6 +31,16 @@ namespace ConsoleApp1
             Console.WriteLine(PerfectSequence(test));
             test = new int[] { 0, 2, -2 };
             Console.WriteLine(PerfectSequence(test));
+            Console.WriteLine("");
+            
+            // Sum of Rows
+            Console.WriteLine("Sum of rows:");
+            int[,] myArray = new int[3, 5] { { 1, 2, 3, 4, 5 }, { 6, 7, 8, 9, 10 }, { 11, 12, 13, 14, 15 } };
+            int[] sums = SumOfRows(myArray);
+            foreach(int sum in sums)
+            {
+                Console.WriteLine(sum);
+            }
         }
 
         //================== Array Max Result ===================
@@ -126,6 +142,7 @@ namespace ConsoleApp1
         /*
         Given an array, return “Yes” if the sequence is considered a perfect sequence. 
         Otherwise, return “No”
+       
         Algorithm:
         write for loop
            check that number id greater then 0 if not return no
@@ -149,6 +166,33 @@ namespace ConsoleApp1
             if (sum == product) return "Yes";
 
             return "No";
+        }
+
+        //============= Sum of Rows ==============
+        /*
+        Given a matrix of integers. 
+        Return the sum of each row in a single dimensional array.
+       
+        Algorithm:
+        Write a nested for loop to step through each index in each array
+        In the inner loop add each index value to a sum vaiable
+        After exiting the inner loop and before starting another outer loop place variable in output array
+         */
+        static int[] SumOfRows(int[,] arr)
+        {
+            int[] returnArr = new int[arr.GetLength(0)];
+
+            for (int i = 0; i < arr.GetLength(0); i++)
+            {
+                int sum = 0;
+               
+                for (int k = 0; k < arr.GetLength(1); k++) 
+                {
+                    sum += arr[i, k];
+                }
+                returnArr[i] = sum;
+            }
+            return returnArr;
         }
     }// end of main
 }// end of class
