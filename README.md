@@ -9,7 +9,7 @@
 
 ### Instructions
 Create a Console application that requests 5 numbers between 1-10 from the user. 
-Output the array to the console and ask the user to select a number. After the selection, output the ìscoreî of the number chosen.
+Output the array to the console and ask the user to select a number. After the selection, output the ‚Äúscore‚Äù of the number chosen.
 Method needs to take in an int [] and a int if the users selected input.
 The score is whatever number the iser selected * the number of times it is in the array.
 
@@ -26,7 +26,7 @@ Time:  O(n)
 * If they match increase counter by one
 * Print number for score * the amount of times it was found in int array
 
-[Screenshot](..\img\ArrayMaxResultScreenshot.png)
+[Screenshot](img\ArrayMaxResultScreenshot.png)
 ---------------------------------------------------------------------------
 
 # Leap Year Calculator
