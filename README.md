@@ -3,6 +3,7 @@
 
 * [Array Max Result](#Array-Max-Result)
 * [Leap Year Calculator](#Leap-Year-Calculator)
+* [Perfect Sequence](#Perfect-Sequence)
 
 # Array Max Result
 ### Date 1/9/2021
@@ -47,4 +48,27 @@ Time:  O(1)
 * If year doesn't pass any of the above test return false.
 
 [Screenshot](/img/LeapYearCalcScreenshot.png)
+--------------------------------------------------------------------
+
+# Perfect Sequence
+### Date 1/9/2021
+
+### Instructions
+Given an array, return “Yes” if the sequence is considered a perfect sequence. Otherwise, return “No”
+A perfect sequence is a sequence such that all of its elements are non-negative integers and the product of all of them is equal to their sum.
+
+### Approach & Efficiency
+Space: O(1)  
+Time:  O(n)
+* Create a variable to hold the sum of the numbers
+* Create a variable to hold the product of the numbers
+* Write for loop and:
+*    Check that number id greater then 0 if not return "No"
+*    Add num to sum variable
+*    Make product variable equal to variable * number
+* After loop check if sum variable and multiply variable are equal 
+* If they are return "yes"
+* If not return "no"
+
+[Screenshot](/img/PerfectSequence.png)
 --------------------------------------------------------------------
