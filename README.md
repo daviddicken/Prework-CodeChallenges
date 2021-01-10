@@ -40,11 +40,11 @@ except every year that is evenly divisible by 100.
 unless the year is also evenly divisible by 400.
 
 ### Approach & Efficiency
-Space: O(1)
+Space: O(1)  
 Time:  O(1)
 * Test if year is evenly divisible by 400 first and return true if it is.
 * Test if year is evenly divisible by 4 and that it is not evenly divisible by 100. return true if it passes both.
 * If year doesn't pass any of the above test return false.
 
-[Screenshot](Prework-CodeChallenges/img/LeapYearCalcScreenshot.png)
+[Screenshot](/img/LeapYearCalcScreenshot.png)
 --------------------------------------------------------------------
