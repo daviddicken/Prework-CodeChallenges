@@ -7,8 +7,9 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            //ArrayMaxResult
             getNumsArrayMax();
-            Console.WriteLine("Hello World!");
+            
         }
 
         /*Create a Console application that requests 5 numbers between 1-10 from the user. 
@@ -40,11 +41,11 @@ namespace ConsoleApp1
                 }
                 nums[i] = num;
             }
-            Console.WriteLine("You can select any number from this list: ");
+            Console.Write("You can select any number from this list: ");
             // https://stackoverflow.com/questions/16265247/printing-all-contents-of-array-in-c-sharp
-            Console.Write("[{0}]", string.Join(", ", nums));
+            Console.WriteLine("[{0}]", string.Join(", ", nums));
             Console.WriteLine("However your scoring will be depend on the frequency of that number in the list." +
-                " E.g for [2,2,3,5,4] if you pick 2 your score will be 4 (2 * 2) but if you pick 5 your score will be 5 (5 * 1");
+                " E.g for [2,2,3,5,4] if you pick 2 your score will be 4 (2 * 2) but if you pick 5 your score will be 5");
 
             bool notFound = true;
             while (notFound)
@@ -56,30 +57,32 @@ namespace ConsoleApp1
                         num = int.Parse(Console.ReadLine());
                         if (!nums.Contains(num))
                         {
-                            Console.WriteLine("I gave you a list of numbers pick one of these numbers:");
-                            Console.Write("[{0}]", string.Join(", ", nums));
+                            Console.Write("I gave you a list of numbers pick one of these numbers:");
+                            Console.WriteLine("[{0}]", string.Join(", ", nums));
                         }
                     } while (!nums.Contains(num));
                     notFound = false;
                 }
                 catch
                 {
-                    Console.WriteLine("I gave you a list of numbers pick one of these numbers:");
-                    Console.Write("[{0}]", string.Join(", ", nums));
+                    Console.Write("I gave you a list of numbers pick one of these numbers:");
+                    Console.WriteLine("[{0}]", string.Join(", ", nums));
                 }
             }
             ArrayMaxResult(nums, num);
         }
 
-
-        static int ArrayMaxResult(int [] nums, int num)
+//------------------------------------------------------
+        static void ArrayMaxResult(int [] nums, int num)
         {
             int counter = 0;
             for(int i = 0; i < nums.Length; i++)
             {
                 if (nums[i] == num) counter++;
             }
-            return num * counter;
+            Console.WriteLine(num * counter);
         }
     }
 }
+
+//============
