@@ -8,7 +8,7 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             // ArrayMaxResult
-           // getNumsArrayMax();
+            getNumsArrayMax();
             // Leap Year Calculator 
             IsLeapYear(1997);
             IsLeapYear(1996);
