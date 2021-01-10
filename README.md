@@ -24,7 +24,6 @@ The score is whatever number the iser selected * the number of times it is in th
 * Print number for score * the amount of times it was found in int array
 
 ### ScreenShot
-
-
+[Screenshot](Prework-CodeChallenges\img)
 
 _________________________________________________________________________________
